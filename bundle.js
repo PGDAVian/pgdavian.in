@@ -26,7 +26,7 @@ function submitPost(e) {
         },
     };
 
-    fetch("https://bloguefp.herokuapp.com/", options) // also do we need to put this in a function to export?
+    fetch("server.pgdavian.in/", options) // also do we need to put this in a function to export?
         .then((resp) => resp.json())
         .then(appendPost)
         .catch(console.warn);
@@ -124,7 +124,7 @@ function submitComment(e) {
         },
     };
 
-    fetch(`https://bloguefp.herokuapp.com/${postId}`, options)
+    fetch(`server.pgdavian.in/${postId}`, options)
         .then((r) => r.json())
         .catch(console.warn);
 
@@ -161,7 +161,7 @@ function emojiReact(e) {
             "Content-Type": "application/json",
         },
     };
-    fetch(`https://bloguefp.herokuapp.com/${postId}/${emoji}`, options)
+    fetch(`server.pgdavian.in/${postId}/${emoji}`, options)
         .then((resp) => resp.json())
         .then((data) => emojiCounter(data, postId, emoji))
         .catch(console.warn);
@@ -205,7 +205,7 @@ function sendApiRequest(e) {
 
 // ******************** Get all posts as soon as app is loaded ********************
 function getAllPosts() {
-    fetch("https://bloguefp.herokuapp.com/")
+    fetch("server.pgdavian.in/")
         .then((r) => r.json())
         .then(appendPosts)
         .catch(console.warn);

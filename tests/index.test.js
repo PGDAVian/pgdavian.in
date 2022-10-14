@@ -16,7 +16,7 @@ describe("app", () => {
     describe("requests", () => {
         describe("getAllPosts", () => {
             test("it makes a get request", () => {
-                app.getAllPosts("https://bloguefp.herokuapp.com/");
+                app.getAllPosts("server.pgdavian.in/");
                 expect(fetch.mock.calls[0][0]).toMatch(/$/);
             });
         });

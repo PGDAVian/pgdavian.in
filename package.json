@@ -1,5 +1,5 @@
 {
-  "name": "blogue-client",
+  "name": "pgdavian",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roselynle/blogue-client.git"
+    "url": "git+https://github.com/PGDAVian/pgdavian.in.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/roselynle/blogue-client/issues"
+    "url": "https://github.com/PGDAVian/pgdavian.in/issues"
   },
-  "homepage": "https://github.com/roselynle/blogue-client#readme",
+  "homepage": "https://github.com/PGDAVian/pgdavian.in#readme",
   "devDependencies": {
     "concurrently": "^6.0.0",
     "jest": "^26.6.3",

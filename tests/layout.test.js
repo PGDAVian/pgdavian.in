@@ -11,7 +11,7 @@ describe("index.html", () => {
         test("it has a title", () => {
             const head = document.querySelector("head");
             expect(head).toBeTruthy();
-            expect(head.textContent).toContain("Blogue");
+            expect(head.textContent).toContain("PGDAVian");
         });
         test("there is a css stylesheet", () => {
             const head = document.querySelector("head");
@@ -30,7 +30,7 @@ describe("index.html", () => {
             test("there is a header and it has a title", () => {
                 const header = document.querySelector("header");
                 expect(document.querySelector("header")).toBeTruthy();
-                expect(header.textContent).toContain("BLOGUE");
+                expect(header.textContent).toContain("PGDAVian");
             });
             test("it has a button for scrolling to the make a post section", () => {
                 let postButton = document.querySelector(".navigate");

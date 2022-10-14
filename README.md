@@ -1,9 +1,6 @@
-# Blogue - client
+# PGDAVian
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/226f0fc3-cf20-46f0-a3a6-9405d6a47167/deploy-status)](https://app.netlify.com/sites/blogue/deploys)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-![](assets/images/demo.gif)
 
 A anonymous community journalling site built using JavaScript, HTML, and CSS, inspired by the aesthetics of Vogue magazine.
 Users can make posts anonymously, with an optional feature to add a GIF.
@@ -11,14 +8,14 @@ Other users can comment and react on the submitted posts.
 
 ### Installation
 
--   Clone or download this repo and [blogue-server](https://github.com/roselynle/blogue-server) repo
+-   Clone or download this repo and [pgdavian-backend](https://github.com/PGDAVian/pgdavian-backend) repo
 
 ### Usage
 
--   Open your terminal/CLI and navigate to the `blogue-server` folder
+-   Open your terminal/CLI and navigate to the `pgdavian-backend` folder
 -   Run `npm install` to install dependencies
 -   Run `npm start` to launch server
--   Navigate to the `blogue-client` folder
+-   Navigate to the `pgdavian-backend` folder
 -   Run `npm install` to install dependencies
 -   Load `index.html` in your browser
 -   Happy posting!
