@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="assets/js/index.js"></script>
+        <script defer src="assets/js/events.js"></script>
+        <script defer src="assets/js/count.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/2021b518c4.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/images/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="assets/css/media-queries.css"
+        />
+        <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+        <title>Blogue</title>
+    </head>
+    <body>
+        <header>
+            <h1>BLOGUE</h1>
+        </header>
+        <h2>A Community of Overthinkers</h2>
+        <div class="button">
+            <button
+                class="navigate"
+                onClick="document.getElementById('post').scrollIntoView();"
+            >
+                Make a Post
+            </button>
+            <button
+                class="navigate"
+                onClick="document.getElementById('entries').scrollIntoView();"
+            >
+                See All Posts
+            </button>
+        </div>
+        <div id="post">
+            <h3>WHAT'S ON YOUR MIND?</h3>
+            <form id="new-post-form">
+                <label for="subject">SHARE YOUR <span id="spin"></span></span></label
+                ><br /><br />
+                Subject:
+                <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    maxlength="100"
+                    required
+                />
+                <div id="subjectCount">0/100</div>
+                <br />
+                <textarea
+                    placeholder="What's on your mind?..."
+                    id="journalInput"
+                    name="journalInput"
+                    rows="7"
+                    cols="80"
+                    maxlength="1000"
+                    required
+                ></textarea
+                ><br />
+                <div id="inputCount">0/1000</div>
+                <div id="gifSection">
+                    <label for="giphy">Gif Search</label>
+                    <input
+                        id="giphy"
+                        name="giphy"
+                        type="search"
+                        placeholder="Type in a keyword and click Add GIF to preview (optional)"
+                    />
+
+                    <button
+                        onclick="sendApiRequest()"
+                        id="gif-button"
+                        type="button"
+                    >
+                        Add GIF</button
+                    ><br />
+                    <div id="gifContainer">
+                        <img id="gifPreview" src="" />
+                    </div>
+                </div>
+                <br /><br />
+                <button class="submit" type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <div id="entries">
+            <h3>WHAT'S EVERYONE THINKING?</h3>
+            <div id="postsContainer"></div>
+        </div>
+        <div id= "backButton"></div>
+        <button
+        class="backToTop"
+        onClick="document.querySelector('h1').scrollIntoView();"
+    >
+        Back to top
+    </button>
+</div>
+    </body>
+    </body>
+</html>
