@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Siemreap
+- Font Author: http://scripts.sil.org/OFL
+- Font Source: http://fonts.gstatic.com/s/siemreap/v13/Gg82N5oFbgLvHAfNl2YbnA8DLXpe.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)
