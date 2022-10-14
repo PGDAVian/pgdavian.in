@@ -26,7 +26,7 @@ function submitPost(e) {
         },
     };
 
-    fetch("server.pgdavian.in/", options) // also do we need to put this in a function to export?
+    fetch("20.219.167.154:3000/", options) // also do we need to put this in a function to export?
         .then((resp) => resp.json())
         .then(appendPost)
         .catch(console.warn);
@@ -132,7 +132,7 @@ function submitComment(e) {
         },
     };
 
-    fetch(`server.pgdavian.in/${postId}`, options)
+    fetch(`20.219.167.154:3000/${postId}`, options)
         .then((r) => r.json())
         .catch(console.warn);
 
@@ -169,7 +169,7 @@ function emojiReact(e) {
             "Content-Type": "application/json",
         },
     };
-    fetch(`server.pgdavian.in/${postId}/${emoji}`, options)
+    fetch(`20.219.167.154:3000/${postId}/${emoji}`, options)
         .then((resp) => resp.json())
         .then((data) => emojiCounter(data, postId, emoji))
         .catch(console.warn);
@@ -213,7 +213,7 @@ function sendApiRequest(e) {
 
 // ******************** Get all posts as soon as app is loaded ********************
 function getAllPosts() {
-    fetch("server.pgdavian.in/")
+    fetch("20.219.167.154:3000/")
         .then((r) => r.json())
         .then(appendPosts)
         .catch(console.warn);

@@ -16,7 +16,7 @@ describe("app", () => {
     describe("requests", () => {
         describe("getAllPosts", () => {
             test("it makes a get request", () => {
-                app.getAllPosts("server.pgdavian.in/");
+                app.getAllPosts("20.219.167.154:3000/");
                 expect(fetch.mock.calls[0][0]).toMatch(/$/);
             });
         });
